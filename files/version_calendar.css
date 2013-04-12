@@ -1,0 +1,93 @@
+/* Layout */
+
+.month, .day, .date, .versions, .version, .tooltip {
+	padding: 0;
+	margin: 0;
+}
+
+.yearname {
+	text-align: center;
+}
+
+.yeartable {
+	margin: 0 auto;	
+	border-spacing: 2pt;
+}
+
+.month {
+	width: 8.333%;
+}
+
+.day {
+	vertical-align: top;
+}
+
+.date {
+	float: left;
+	margin-right: 2pt;
+}
+
+.versions {
+	float: left;
+}
+
+.versiontext {
+	padding: 0 2pt;
+}
+
+/* Tooltips */
+
+.version {
+	position: relative;
+}
+
+.tooltip {
+	display: none;
+}
+
+.version:hover {
+	z-index: 1;
+}
+
+.version:hover  .tooltip {
+	display: block;
+	position: absolute;
+	left: -2pt;
+	top: 3ex;
+	padding: 1ex;
+	width: 52ex;
+	white-space: pre-wrap;
+	border: 2pt solid #fff;
+}
+
+.mylink {
+	text-decoration: none;
+}
+
+/* Colors */
+
+.yearname { color: #333; }
+.month { color: #333; }
+
+.day { background-color: #ddd; color: #666; }
+.day.today { background-color: #666; color: #fff; }
+.day.holiday { background-color: #bbb; color: #666; }
+
+.version0 { background-color: #f66; color: #fff;	 } /* The number of versions must match the maxVersionIndex variable in PHP */
+.version1 { background-color: #ff6; color: #333; }
+.version2 { background-color: #6f6; color: #333; }
+.version3 { background-color: #6ff; color: #333; }
+.version4 { background-color: #66f; color: #fff; }
+.version5 { background-color: #f6f; color: #fff; }
+
+/* Help page */
+
+.block {
+	padding: 1ex;
+	background-color: #ddd;
+	display:inline-block;
+}
+
+.code {
+	white-space: pre-wrap;
+}

@@ -1,0 +1,18 @@
+<?php
+
+$s_plugin_VersionCalendar_main_menu = "Version Calendar";
+$s_plugin_VersionCalendar_sub_menu_calendar = "Calendar";
+$s_plugin_VersionCalendar_sub_menu_help = "Help";
+
+$s_plugin_VersionCalendar_month_1 = "January";
+$s_plugin_VersionCalendar_month_2 = "February";
+$s_plugin_VersionCalendar_month_3 = "March";
+$s_plugin_VersionCalendar_month_4 = "April";
+$s_plugin_VersionCalendar_month_5 = "May";
+$s_plugin_VersionCalendar_month_6 = "June";
+$s_plugin_VersionCalendar_month_7 = "July";
+$s_plugin_VersionCalendar_month_8 = "August";
+$s_plugin_VersionCalendar_month_9 = "September";
+$s_plugin_VersionCalendar_month_10 = "October";
+$s_plugin_VersionCalendar_month_11 = "November";
+$s_plugin_VersionCalendar_month_12 = "December";
