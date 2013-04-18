@@ -133,7 +133,6 @@ Alle anderen Zeilen werden ignoriert (jedoch wird der gesamte Beschreibungstext 
 $g_default_home_page = 'plugin.php?page=VersionCalendar/version_calendar';
 
 $g_view_changelog_threshold = ADMINISTRATOR;
-$g_roadmap_view_threshold = ADMINISTRATOR;
 $g_view_summary_threshold = ADMINISTRATOR;
 
 # Version calendar plugin end</p>
@@ -148,8 +147,9 @@ Dadurch kann die Arbeit mit Mantis wie folgt optimiert werden:
 </ol>
 </p>
 
-<p>Die restlichen drei Zeilen entfernen die Links zu den meist wenig nützlichen Seiten <em>Änderungsprotokoll</em>, <em>Roadmap</em> und <em>Zusammenfassung</em>
-für alle Benutzer außer dem Administrator aus dem Hauptmenü.</p>
+<p>Die restlichen beiden Zeilen entfernen die Links zu den meist wenig nützlichen Seiten <em>Änderungsprotokoll</em> und <em>Zusammenfassung</em>
+für alle Benutzer außer dem Administrator aus dem Hauptmenü.
+Der Link zur Seite <em>Roadmap</em> kann leider nicht auf diese Weise entfernt werden, da dann auch die Spalte <em>Zielversion</em> ausgeblendet wird.</p>
 
 <h2>Plugin-Historie</h2>
 
