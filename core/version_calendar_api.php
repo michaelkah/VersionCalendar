@@ -11,7 +11,10 @@ function project_selection() {
 function print_submenu() {
 	echo '<div align="center"><p>';
 	print_bracket_link(plugin_page('version_calendar'), plugin_lang_get('sub_menu_calendar'));
+	print_bracket_link('search.php?sticky_issues=on&sortby=target_version%2Cstatus&dir=ASC%2CASC&per_page=999999&hide_status_id=-2', plugin_lang_get('sub_menu_all_issues'));
+	print_bracket_link('search.php?sticky_issues=on&sortby=status&dir=ASC&per_page=999999&hide_status_id=-2&target_version=-2', plugin_lang_get('sub_menu_unplanned_issues'));
 	print_bracket_link(plugin_page('version_calendar_help'), plugin_lang_get('sub_menu_help'));
+	
 	echo '</p></div>';
 }
 

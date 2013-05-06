@@ -6,7 +6,7 @@ class VersionCalendarPlugin extends MantisPlugin {
         $this->description = 'Displays a year view calendar in the main menu to provide a quick and easy overview of all release-relevant dates to all project participants.';    # Short description of the plugin
         $this->page = '';           # Default plugin page
 
-        $this->version = '1.2';     # Plugin version string
+        $this->version = '1.3';     # Plugin version string
         $this->requires = array(    # Plugin dependencies, array of basename => version pairs
             'MantisCore' => '1.2.0',  #   Should always depend on an appropriate version of MantisBT
             );

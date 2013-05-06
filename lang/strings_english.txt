@@ -3,6 +3,8 @@
 $s_plugin_VersionCalendar_main_menu = "Version Calendar";
 $s_plugin_VersionCalendar_sub_menu_calendar = "Calendar";
 $s_plugin_VersionCalendar_sub_menu_help = "Help";
+$s_plugin_VersionCalendar_sub_menu_all_issues = "All Issues";
+$s_plugin_VersionCalendar_sub_menu_unplanned_issues = "Unplanned Issues";
 
 $s_plugin_VersionCalendar_month_1 = "January";
 $s_plugin_VersionCalendar_month_2 = "February";

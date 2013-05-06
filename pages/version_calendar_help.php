@@ -25,8 +25,15 @@ print_submenu();
 <li>In einem Tooltip können weitere Informationen angezeigt werden, z.&nbsp;B. Liefertermine, verschobene Termine sowie SVN-Tags und -Branches (wichtig für Entwickler)</li>
 </ul>
 
-<h2>Bildschirmfoto</h2>
+<p>Durch den Versionskalender kann die Arbeit mit Mantis wie folgt optimiert werden:
+<ol>
+<li>Mantis-Anmeldung &rArr; Versionskalender (Überblick über die anstehenden Termine)</li>
+<li>Klick auf eine Version &rArr; Einträge-Liste (Überblick über den aktuellen Stand dieser Version)</li>
+<li>Klick auf einen Eintrag &rArr; Eintrags-Seite (Detailinformationen über diesen Eintrag)</li>
+</ol>
+</p>
 
+<h2>Bildschirmfoto</h2>
 
 <img src="<?php echo plugin_file('version_calendar.png'); ?>"/>
 <h2>Funktionen</h2>
@@ -48,10 +55,24 @@ Es gibt keine Filter.</p>
 <p>Klickt man auf einen (beliebigen) Termin einer Version, so gelangt man zur Seite <em>Einträge anzeigen</em> mit folgenden Filtereinstellungen:
 <ul>
 <li>Zielversion: Die gewählte Version</li>
-<li>Sortieren nach: Status Aufsteigend</li>
+<li>Sortieren nach: Status (aufsteigend)</li>
 <li>Status ausblenden: keine (auch nicht <em>geschlossen</em>)</li>
 <li>Zeige (Einträge pro Seite): 999.999</li>
 <li>Fixierte Einträge anzeigen: Ja</li>
+</ul>
+</p>
+
+<p>Analog dazu gibt es im Submenü den Filter <em>Ungeplante Einträge</em>, der alle Einträge ohne Zielversion anzeigt (restliche Filtereinstellungen analog zu oben):
+<ul>
+<li>Zielversion: keine</li>
+</ul>
+</p>
+
+<p>Außerdem gibt es im Submenü den Filter <em>Alle Einträge</em>, der alle Einträge ohne Einschränkung der Zielversion anzeigt
+und als Ausgangspunkt für weitere, manuelle Filtereinstellungen dienen kann (restliche Filtereinstellungen analog zu oben):
+<ul>
+<li>Zielversion: alle</li>
+<li>Sortieren nach: Zielversion (aufsteigend), Status (aufsteigend)</li>
 </ul>
 </p>
 
@@ -119,39 +140,32 @@ Alle anderen Zeilen werden ignoriert (jedoch wird der gesamte Beschreibungstext 
 );</p>
 </p>
 
-<p>Dabei ist es auch möglich, eine von vier abweichende Anzahl von Schlüsselwörtern zu konfigurieren.</p>
+<p>Dabei ist es möglich, eine beliebige Anzahl von Schlüsselwörtern zu konfigurieren.</p>
 
-<p>Die Konfiguration für diese Mantis-Installation ist wie folgt:
+<p>Die Konfiguration für <strong>diese</strong> Mantis-Installation ist wie folgt:
 <p class="code block"><?php print_r(get_text_map()); ?></p>
 </p>
 	
 <h2>Konfiguration des Hauptmenüs</h2>
 
-<p>Bei der Installation des Versionskalender-Plugins ist es eventuell sinnvoll, folgende Konfigurationen in der Datei <em>config_inc.php</em> vorzunehmen:
+<p>Um die oben beschriebene Arbeitsweise mit Mantis zu ermöglichen, ist es nötig, bei der Installation des Versionskalender-Plugins folgende Konfigurationen in der Datei <em>config_inc.php</em> vorzunehmen:
 <p class="code block"># Version calendar plugin start
-
 $g_default_home_page = 'plugin.php?page=VersionCalendar/version_calendar';
-
 $g_view_changelog_threshold = ADMINISTRATOR;
 $g_view_summary_threshold = ADMINISTRATOR;
-
 # Version calendar plugin end</p>
 </p>
 
 <p>Die erste Zeile setzt die Landeseite nach der Anmeldung oder der Projektauswahl auf den Versionskalender anstatt der standardmäßig konfigurierten und meist wenig nützlichen <em>Übersicht</em>-Seite.
-Dadurch kann die Arbeit mit Mantis wie folgt optimiert werden:
-<ol>
-<li>Mantis-Anmeldung &rArr; Versionskalender (Überblick über die anstehenden Termine)</li>
-<li>Klick auf eine Version &rArr; Einträge-Liste (Überblick über den aktuellen Stand dieser Version)</li>
-<li>Klick auf einen Eintrag &rArr; Eintrags-Seite (Detailinformationen über diesen Eintrag)</li>
-</ol>
-</p>
-
-<p>Die restlichen beiden Zeilen entfernen die Links zu den meist wenig nützlichen Seiten <em>Änderungsprotokoll</em> und <em>Zusammenfassung</em>
-für alle Benutzer außer dem Administrator aus dem Hauptmenü.
+Die restlichen beiden Zeilen entfernen die Links zu den ebenfalls meist wenig nützlichen Seiten <em>Änderungsprotokoll</em> und <em>Zusammenfassung</em> für alle Benutzer außer dem Administrator aus dem Hauptmenü.
 Der Link zur Seite <em>Roadmap</em> kann leider nicht auf diese Weise entfernt werden, da dann auch die Spalte <em>Zielversion</em> ausgeblendet wird.</p>
 
 <h2>Plugin-Historie</h2>
+
+<h4>Version 1.3 (6. Mai 2013)</h4>
+<ul>
+<li>Links <em>Alle Einträge</em> und <em>Ungeplante Einträge</em> im Submenü</li>
+</ul>
 
 <h4>Version 1.2 (12. April 2013)</h4>
 <ul>
