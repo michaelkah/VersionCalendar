@@ -91,3 +91,9 @@
 .code {
 	white-space: pre-wrap;
 }
+
+@media (max-width: 1024px) {
+	.month, .day, .versiontext, .tooltip {
+		font-size: smaller;
+	}
+}
