@@ -162,6 +162,11 @@ Der Link zur Seite <em>Roadmap</em> kann leider nicht auf diese Weise entfernt w
 
 <h2>Plugin-Historie</h2>
 
+<h4>Version 1.4 (17. Oktober 2013)</h4>
+<ul>
+<li>Responsive Webdesign: Kleinere Schriften auf kleinen Geräten</li>
+</ul>
+
 <h4>Version 1.3 (6. Mai 2013)</h4>
 <ul>
 <li>Links <em>Alle Einträge</em> und <em>Ungeplante Einträge</em> im Submenü</li>
